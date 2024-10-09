@@ -1,0 +1,27 @@
+@import '../../sass/variables.scss';
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem auto;
+    gap: 7rem;
+
+    .error-title {
+        font-size: 18rem;
+        color: $mainKasa;
+    }
+
+    .error-subtitle {
+        font-size: 2.25rem;
+        color: $mainKasa;
+        font-weight: 500;
+    }
+
+    .error-link {
+        font-size: 1.1rem;
+        text-decoration: underline;
+        font-weight: 500;
+    }
+}
