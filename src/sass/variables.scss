@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@mixin typo {
+    font-family: "Montserrat", serif;
+}
+
+@mixin no-margin {
+    margin: 0;
+}
+
+$mainKasa : rgba(255, 96, 96, 1);
+$blackKasa : rgba(0, 0, 0, 1);
+$whiteKasa : rgba(255, 255, 255, 1);
+$greyKasa : rgba(246, 246, 246, 1);

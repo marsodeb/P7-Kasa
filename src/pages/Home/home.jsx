@@ -1,8 +1,7 @@
+import '../../sass/base.scss'
+
 function Home() {
-  return (
-    <div>
-    </div>
-  );
+
 }
 
 export default Home;
