@@ -1,0 +1,12 @@
+@import '../../sass/variables.scss';
+
+.logement {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.3rem;
+    background-color: $greyKasa;
+    border-radius: 1.5rem;
+    padding: 3.1rem;
+    justify-content: center;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,32 @@
+@import '../../sass/variables.scss';
+
+.logement-card {
+    width: 21rem;
+    height: 21rem;
+    position: relative;
+    transition: transform .3s, filter .3s;
+    cursor: pointer;
+    background-color: $mainKasa;
+    border-radius: 0.6rem;
+    user-select: none;
+
+    &:hover {
+        transform: scale(1.03);
+        filter: brightness(1.03);
+    }
+
+    &-cover {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.6rem;
+    }
+
+    &-title {
+        position: absolute;
+        bottom: 0;
+        color: $whiteKasa;
+        font-size: 1.1rem;
+        padding: 20px;
+        text-shadow: 0px 0px 5px rgba(66, 68, 90, 1);
+    }
+}
