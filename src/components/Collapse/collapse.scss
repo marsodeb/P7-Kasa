@@ -2,7 +2,7 @@
 
 .collapse {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
 
     &-button {
         height: 3.3rem;
@@ -11,11 +11,18 @@
         display: flex;
         align-items: center;
         border-radius: 0.3rem;
+        padding-left: 1rem;
+        z-index: 1;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    &:hover {
+        filter: brightness(1.2);
     }
 
     &-title {
         color: $whiteKasa;
-        padding-left: 1rem;
         font-size: 1.5rem;
         font-weight: 700;
     }
@@ -23,10 +30,30 @@
     &-arrow {
         height: 0.8rem;
         position: absolute;
-        right: -45%;
+        right: 0;
+        width: auto;
+        padding: 1rem;
+        transition: transform .3s;
+    }
+
+    .rotate {
+        transform: rotate(180deg);
+    }
+
+    &-content {
+        background-color: $greyKasa;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s ease;
     }
 
     &-txt {
         margin: 0;
+        padding: 1rem;
+    }
+
+    .active {
+        max-height: 5rem;
+        overflow: visible;
     }
 }
