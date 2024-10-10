@@ -5,11 +5,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 4rem auto;
-    gap: 7rem;
+    margin: 1rem auto;
 
     .error-title {
-        font-size: 18rem;
+        font-size: 16rem;
         color: $mainKasa;
     }
 
@@ -17,6 +16,7 @@
         font-size: 2.25rem;
         color: $mainKasa;
         font-weight: 500;
+        padding-bottom: 7rem;
     }
 
     .error-link {

@@ -1,0 +1,32 @@
+@import '../../sass/variables.scss';
+
+.collapse {
+    width: 80%;
+    margin: 0 auto;
+
+    &-button {
+        height: 3.3rem;
+        background-color: $mainKasa;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border-radius: 0.3rem;
+    }
+
+    &-title {
+        color: $whiteKasa;
+        padding-left: 1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    &-arrow {
+        height: 0.8rem;
+        position: absolute;
+        right: -45%;
+    }
+
+    &-txt {
+        margin: 0;
+    }
+}
