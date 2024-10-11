@@ -24,6 +24,7 @@ function Carousel({ img }) {
             <img className='carousel-arrow-left' src={arrow_left} alt='Précédent' onClick={prevImage}></img>
             <img className='carousel-arrow-right' src={arrow_right} alt='Suivante' onClick={nextImage}></img>
             <img className='carousel-img' src={img[currentIndex]} alt={`${currentIndex + 1}`} />
+            <span className='carousel-counter'>{currentIndex + 1} / {img.length}</span>
         </div>
     );
 }

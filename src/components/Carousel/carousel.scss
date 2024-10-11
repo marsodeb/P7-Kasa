@@ -1,3 +1,5 @@
+@import '../../sass/variables.scss';
+
 .carousel {
     width: 100%;
     height: 26rem;
@@ -38,5 +40,14 @@
         border-radius: 25px;
         object-fit: cover;
         object-position: center;
+    }
+
+    &-counter {
+        position: absolute;
+        color: $whiteKasa;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.1rem;
     }
 }

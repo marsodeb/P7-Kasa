@@ -3,6 +3,7 @@ import '../../sass/base.scss';
 import './logement.scss';
 import useFetch from '../../utils/useFetch';
 import { useParams } from "react-router-dom";
+import Collapse from '../../components/Collapse/collapse';
 
 function Logement() {
 
@@ -27,6 +28,16 @@ function Logement() {
         <section className='logement'>
             <Carousel
                 img={response.pictures} />
+            <div className='logement-collapse'>
+                <Collapse
+                    title={"Description"}
+                    content={response.description}
+                />
+                <Collapse
+                    title={"Équipements"}
+                    content={response.equipments}
+                />
+            </div>
         </section>
     );
 }

@@ -62,4 +62,15 @@
         transform: translateY(0);
         transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
     }
+
+    &-list {
+        padding: 1rem;
+        margin: 0;
+        list-style: none;
+
+        &-item {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+    }
 }

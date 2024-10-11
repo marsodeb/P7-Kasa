@@ -18,10 +18,18 @@ function Collapse({ title, content }) {
                 <img src={arrow} className={`collapse-arrow ${isActive ? 'rotate' : ''}`} alt='Flèche'></img>
             </div>
             <div className={`collapse-content ${isActive ? 'active' : ''}`}>
-                <p className='collapse-txt'>{content}</p>
+                {Array.isArray(content) ? (
+                    <ul className='collapse-list'>
+                        {content.map((item, index) => (
+                            <li key={index} className='collapse-list-item'>{item}</li>
+                        ))}
+                    </ul>
+                ) : (
+                    <p className='collapse-txt'>{content}</p>
+                )}
             </div>
         </div>
-    )
+    );
 }
 
 export default Collapse
