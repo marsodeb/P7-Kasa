@@ -22,7 +22,7 @@ function Home() {
         cover={homebg}
         title={"Chez vous, partout et ailleurs"}
       />
-      <div className="logement">
+      <div className="logement-card-container">
         {Array.isArray(data) && data.map((response) => (
           <Card
             link={`/logement/${response.id}`}

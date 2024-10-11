@@ -20,7 +20,7 @@ root.render(
         <Route exact path="/a-propos" element={<Apropos />} />
         <Route
           exact
-          path="/logement/:annonceId"
+          path="/logement/:id"
           element={<Logement />}
         />
         <Route path="*" element={<Error404 />} />
