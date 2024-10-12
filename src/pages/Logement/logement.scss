@@ -1,4 +1,62 @@
+@import '../../sass/variables.scss';
+
+
+.title-host {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.9rem;
+
+    .title {
+        .logement-title {
+            color: $mainKasa;
+            font-size: 2.2rem;
+            font-weight: 500;
+        }
+
+        .location {
+            color: $blackKasa;
+            font-size: 1.1rem;
+            margin: 0;
+            font-weight: 500;
+        }
+    }
+
+    .host {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+
+        &-name {
+            font-size: 1.1rem;
+            color: $mainKasa;
+            font-weight: 500;
+            text-align: end;
+        }
+
+        &-img {
+            height: 4rem;
+            width: auto;
+            border-radius: 100%;
+        }
+    }
+}
+
+
+.keyword-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.keyword {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
 .logement-collapse {
+    margin-top: 1rem;
     display: flex;
     gap: 4.75rem;
 }

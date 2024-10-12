@@ -1,0 +1,12 @@
+@import '../../sass/variables.scss';
+
+
+.keyword-tags {
+    background-color: $mainKasa;
+    color: $whiteKasa;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 0.6rem;
+    text-align: center;
+    padding: 0.2rem 0.9rem;
+}
