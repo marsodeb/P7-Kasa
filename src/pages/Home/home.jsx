@@ -4,12 +4,18 @@ import homebg from '../../assets/home_bg.jpg';
 import Banner from '../../components/Banner/banner';
 import Card from '../../components/Cards/card';
 import useFetch from '../../utils/useFetch';
+import Loading from '../../components/Loading/loading';
 
 function Home() {
+
+  document.title = 'Kasa - Home'
+
   const { data, loading, error } = useFetch("http://localhost:3000/annonces.json");
 
   if (loading) {
-    return <p>Chargement en cours...</p>;
+    return (
+      <Loading />
+    )
   }
 
   if (error) {

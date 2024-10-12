@@ -5,6 +5,8 @@ import Collapse from '../../components/Collapse/collapse';
 
 function Apropos() {
 
+    document.title = 'Kasa - A propos'
+
     const aproposData = [
         {
             title: 'Fiabilité',

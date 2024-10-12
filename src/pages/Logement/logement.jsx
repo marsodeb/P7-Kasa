@@ -7,14 +7,19 @@ import Collapse from '../../components/Collapse/collapse';
 import Rating from '../../components/Rating/rating';
 import Keyword from '../../components/Keyword/keyword';
 import React from 'react';
+import Loading from '../../components/Loading/loading';
 
 function Logement() {
+
+    document.title = 'Kasa - Logement'
 
     const { data, loading, error } = useFetch("http://localhost:3000/annonces.json");
     const { id } = useParams();
 
     if (loading) {
-        return <p>Chargement en cours...</p>;
+        return (
+            <Loading />
+        )
     }
 
     if (error) {
