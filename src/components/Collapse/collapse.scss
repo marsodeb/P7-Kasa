@@ -4,6 +4,11 @@
     width: 80%;
     margin: 0 auto 2rem auto;
 
+    @include mobile-breakpoint {
+        width: 100%;
+        margin: 0 auto 1rem auto;
+    }
+
     &-button {
         height: 3.3rem;
         background-color: $mainKasa;
@@ -20,12 +25,20 @@
         &:hover {
             filter: brightness(1.2);
         }
+
+        @include mobile-breakpoint {
+            height: 1.8rem;
+        }
     }
 
     &-title {
         color: $whiteKasa;
         font-size: 1.5rem;
         font-weight: 700;
+
+        @include mobile-breakpoint {
+            font-size: 0.8rem;
+        }
     }
 
     &-arrow {
@@ -35,6 +48,10 @@
         width: auto;
         padding: 1rem;
         transition: transform 0.3s;
+
+        @include mobile-breakpoint {
+            height: 0.6rem;
+        }
     }
 
     .rotate {
@@ -54,6 +71,10 @@
         margin: 0;
         padding: 1rem;
         font-size: 1.2rem;
+
+        @include mobile-breakpoint {
+            font-size: 0.8rem;
+        }
     }
 
     .active {
