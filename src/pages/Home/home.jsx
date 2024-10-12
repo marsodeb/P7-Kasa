@@ -10,7 +10,7 @@ function Home() {
 
   document.title = 'Kasa - Home'
 
-  const { data, loading, error } = useFetch("http://localhost:3000/annonces.json");
+  const { data, loading, error } = useFetch("https://marsodeb-kasa.vercel.app/annonces.json");
 
   if (loading) {
     return (
