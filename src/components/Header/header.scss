@@ -1,3 +1,5 @@
+@import '../../sass/variables.scss';
+
 .nav-container {
     position: relative;
     width: 100%;
@@ -5,15 +7,15 @@
     width: -moz-available;
     width: -webkit-fill-available;
     width: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav {
     display: flex;
-    position: absolute;
-    top: 50%;
-    right: 1.25rem;
     flex-wrap: nowrap;
-    transform: translateY(-50%);
+    font-weight: 500;
 
     &-active {
         text-decoration: underline;
@@ -27,12 +29,21 @@
 .nav-logo {
     width: auto;
     height: 3.8rem;
+
+    @include mobile-breakpoint {
+        height: 2.6rem;
+        width: auto;
+    }
 }
 
 .nav-link,
 .nav-active {
     margin-left: 3.5rem;
     font-size: 1.5rem;
-    text-transform: capitalize;
 
+    @include mobile-breakpoint {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        margin-left: 1.6rem;
+    }
 }

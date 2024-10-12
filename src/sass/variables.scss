@@ -8,6 +8,16 @@
     margin: 0;
 }
 
+$breakpoints: (
+    mobile: 768px,
+);
+
+@mixin mobile-breakpoint {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
 $mainKasa : rgba(255, 96, 96, 1);
 $blackKasa : rgba(0, 0, 0, 1);
 $whiteKasa : rgba(255, 255, 255, 1);

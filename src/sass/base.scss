@@ -2,10 +2,15 @@
 
 html {
     @include typo;
+
+    @include mobile-breakpoint {
+        font-size: 4vw
+    }
 }
 
 body {
     @include no-margin;
+    box-sizing: border-box;
 }
 
 #root {

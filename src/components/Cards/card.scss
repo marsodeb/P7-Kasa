@@ -1,14 +1,19 @@
 @import '../../sass/variables.scss';
 
 .logement-card {
-    width: 21rem;
-    height: 21rem;
+    width: 21.3rem;
+    height: 21.3rem;
     position: relative;
     transition: transform .3s, filter .3s;
     cursor: pointer;
     background-color: $mainKasa;
     border-radius: 0.6rem;
     user-select: none;
+
+    @include mobile-breakpoint {
+        width: auto;
+        height: 16rem;
+    }
 
     &:hover {
         transform: scale(1.03);
