@@ -2,10 +2,16 @@ import '../../sass/base.scss'
 import Error from '../../components/Error/error';
 
 function Error404() {
+    const subtitle = (
+        <>
+            Oups! La page que <br /> vous demandez n'existe pas.
+        </>
+    );
+
     return (
         <Error
             title="404"
-            subtitle="Oups! La page que vous demandez n'existe pas."
+            subtitle={subtitle}
         />
     )
 }

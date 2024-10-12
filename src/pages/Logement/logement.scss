@@ -1,9 +1,21 @@
 @import '../../sass/variables.scss';
 
-
-.title-host {
+.logement-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    transition-duration: .3s;
+
+    @include mobile-breakpoint {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+
+.title-keyword {
+    display: flex;
+    flex-direction: column;
     margin-top: 1.9rem;
 
     .title {
@@ -11,6 +23,10 @@
             color: $mainKasa;
             font-size: 2.2rem;
             font-weight: 500;
+
+            @include mobile-breakpoint {
+                font-size: 1.1rem;
+            }
         }
 
         .location {
@@ -18,45 +34,69 @@
             font-size: 1.1rem;
             margin: 0;
             font-weight: 500;
+
+            @include mobile-breakpoint {
+                font-size: 0.9rem;
+            }
         }
+    }
+
+    .keyword {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+}
+
+.host-rating {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+
+    @include mobile-breakpoint {
+        width: 100%;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .host {
         display: flex;
-        align-items: center;
         gap: 0.6rem;
+        align-items: center;
+        justify-content: flex-end;
 
         &-name {
             font-size: 1.1rem;
             color: $mainKasa;
             font-weight: 500;
             text-align: end;
+
+            @include mobile-breakpoint {
+                font-size: 0.75rem;
+            }
         }
 
         &-img {
             height: 4rem;
             width: auto;
             border-radius: 100%;
+
+            @include mobile-breakpoint {
+                height: 2rem;
+            }
         }
     }
 }
 
 
-.keyword-rating {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-.keyword {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-}
-
 .logement-collapse {
     margin-top: 1rem;
     display: flex;
     gap: 4.75rem;
+
+    @include mobile-breakpoint {
+        flex-direction: column;
+        gap: 0;
+    }
 }

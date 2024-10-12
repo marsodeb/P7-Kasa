@@ -9,6 +9,7 @@
     row-gap: 3.1rem;
     justify-content: space-evenly;
     margin: 0 auto;
+    transition-duration: .3s;
 
     @include mobile-breakpoint {
         background-color: $whiteKasa;

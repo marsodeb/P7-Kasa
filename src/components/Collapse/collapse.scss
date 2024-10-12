@@ -3,6 +3,7 @@
 .collapse {
     width: 80%;
     margin: 0 auto 2rem auto;
+    transition-duration: .3s;
 
     @include mobile-breakpoint {
         width: 100%;
@@ -92,6 +93,10 @@
         &-item {
             margin-bottom: 0.5rem;
             font-size: 1.2rem;
+
+            @include mobile-breakpoint {
+                font-size: 0.8rem;
+            }
         }
     }
 }

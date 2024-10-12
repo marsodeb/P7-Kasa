@@ -9,4 +9,8 @@
     border-radius: 0.6rem;
     text-align: center;
     padding: 0.2rem 0.9rem;
+
+    @include mobile-breakpoint {
+        font-size: 0.6rem;
+    }
 }

@@ -31,35 +31,37 @@ function Logement() {
         <section className='logement'>
             <Carousel
                 img={response.pictures} />
-            <div className='title-host'>
-                <div className='title'>
-                    <h1 className='logement-title'>{response.title}</h1>
-                    <p className='location'>{response.location}</p>
-                </div>
-                <div className='host'>
-                    <span className='host-name'>
-                        {response.host.name.split(' ').map((name, index) => (
-                            <React.Fragment key={index}>
-                                {name}
-                                {index === 0 && <br />}
-                            </React.Fragment>
+            <div className='logement-content'>
+                <div className='title-keyword'>
+                    <div className='title'>
+                        <h1 className='logement-title'>{response.title}</h1>
+                        <p className='location'>{response.location}</p>
+                    </div>
+                    <div className='keyword'>
+                        {response.tags.map((item, index) => (
+                            <Keyword
+                                key={index}
+                                word={response.tags[index]}
+                            />
                         ))}
-                    </span>
-                    <img className='host-img' src={response.host.picture} alt={response.host.name}></img>
+                    </div>
                 </div>
-            </div>
-            <div className='keyword-rating'>
-                <div className='keyword'>
-                    {response.tags.map((item, index) => (
-                        <Keyword
-                            key={index}
-                            word={response.tags[index]}
-                        />
-                    ))}
+                <div className='host-rating'>
+                    <div className='host'>
+                        <span className='host-name'>
+                            {response.host.name.split(' ').map((name, index) => (
+                                <React.Fragment key={index}>
+                                    {name}
+                                    {index === 0 && <br />}
+                                </React.Fragment>
+                            ))}
+                        </span>
+                        <img className='host-img' src={response.host.picture} alt={response.host.name}></img>
+                    </div>
+                    <Rating
+                        star={response.rating}
+                    />
                 </div>
-                <Rating
-                    star={response.rating}
-                />
             </div>
             <div className='logement-collapse'>
                 <Collapse

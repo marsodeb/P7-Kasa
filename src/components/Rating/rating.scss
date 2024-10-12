@@ -4,13 +4,25 @@
     display: flex;
     gap: 0.7rem;
 
+    @include mobile-breakpoint {
+        gap: 0.4rem;
+    }
+
     .rated {
         color: $mainKasa;
         font-size: 1.5rem;
+
+        @include mobile-breakpoint {
+            font-size: 0.8rem;
+        }
     }
 
     .unrated {
         color: rgba(227, 227, 227, 1);
         font-size: 1.5rem;
+
+        @include mobile-breakpoint {
+            font-size: 0.8rem;
+        }
     }
 }
